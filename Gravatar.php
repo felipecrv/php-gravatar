@@ -228,8 +228,9 @@ class Gravatar
 
 	/**
 	 * Tests whether a gravatar exists
-	 *   http://codex.wordpress.org/Using_Gravatars
+	 * {@link http://codex.wordpress.org/Using_Gravatars}
 	 *
+	 * @return boolean
 	 */
 	function avatar_exists()
 	{
@@ -237,7 +238,7 @@ class Gravatar
 		$hash = $this->properties['gravatar_id'];
 		if (is_null($hash))
 			return false;
-		$uri = GRAVATAR_URL . $hash . '?d=404';
+		$uri = self::GRAVATAR_URL . $hash . '?d=404';
 		$headers = @get_headers($uri);
 		if (!preg_match('|200|', $headers[0]))
 			return false;
@@ -245,15 +246,25 @@ class Gravatar
 	}
 
 	/**
+	 * Returns the email
+	 *
+	 * @return string
+	 */
+	function get_email()
+	{
+		return $this->email;
+	}
+
+	/**
 	 * __get 
 	 * 
 	 * @param mixed $var 
 	 * @access protected
-	 * @return void
+	 * @return mixed
 	 */
 	function __get($var)
 	{
-		return @$this->properties[$var];
+		return $this->properties[$var];
 	}
 
 	/**

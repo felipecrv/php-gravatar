@@ -324,8 +324,8 @@ class Gravatar
 	function to_HTML()
 	{
 		return  '<img src="'.$this->get_src().'"'
-				.(!isset($this->size) ? '' : " width=\"{$this->size}\"	height=\"{$this->size}\"")
-				."{$this->extra} />";	
+				.(!isset($this->size) ? '' : " width=\"{$this->size}\" height=\"{$this->size}\"")
+				." {$this->extra}/>";	
 	}
 
 	/**

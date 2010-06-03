@@ -1,6 +1,6 @@
 body 
 { 
-	background-color: #EEEEEE; 
+	background-color: #CCCCFF; 
 	margin: 0px; 
 	padding: 0px;
 }
@@ -10,11 +10,10 @@ body
 .banner {  }
 
 .banner-menu 
-{
-	text-align: right;
+{ 
 	clear: both;
 	padding: .5em;
-	border-top: 2px solid #AAAAAA;	
+	border-top: 2px solid #6666AA;	
 }
 
 .banner-title 
@@ -27,7 +26,7 @@ body
 
 .package-selector 
 { 
-	background-color: #DDDDDD; 
-	border: 1px solid #AAAAAA; 
-	color: #000090;
+	background-color: #AAAADD; 
+	border: 1px solid black; 
+	color: yellow;
 }

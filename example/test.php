@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL | E_NOTICE);
-require('Gravatar.php');
+require('../src/Gravatar.php');
 
 // Get an email address from the test.php?email= URL parameter
 $email = $_GET['email'];

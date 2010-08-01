@@ -35,7 +35,7 @@ class GravatarTest extends PHPUnit_Framework_TestCase
         $this->assertTrue($grav2->avatar_exists());
     }
 
-    function testGrvatarExists()
+    function testGravatarExists()
     {
         $gravatar = new Gravatar($this->email);
         $this->assertTrue($gravatar->avatar_exists());
